@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <center><img src="./tg rtc.jpeg" width="90">
+      <b><p> TELANGANA STATE TRANSPORT CORPORATION</p>
+            <p>GENREAL BUS PASS APPLICATION</p></b></center></fieldset>
+    
+    <form action="./success.html" autocomplete="off" method="get">
+        <fieldset><legend>Applicant Details</legend>
+            <label for="name">Name*</label>
+            <input type="text" name="name" max length="20" id="name" required pattern="[a-zA-Z]+">
+            <label for="fathername">Father's/Guardian's Name*</label>
+            <input type="text" name="fathers" id="fathername" required pattern="[a-zA-Z]+"><br>
+           (maximum characters:20)<br><br>
+            <label for="DOB">Date of birth*</label>
+            <input type="date" name="DOB" id="DOB"required>
+            Gender: <input type="radio" name="gender" value="Female" id="male"  required>Female
+            <input type="radio" name="gender" value="male" id="male"  required>male<br><br>
+            Age As on:<input type="age" name="years" pattern="[0-9]{2}">
+            
+            Aadhar No:<input type="text"name="Aadhar No" pattern="[0-9]+" maxlength="12" minlength="12"><br><br>
+            WhatsApp No*:<input type="text" name="WhatsApp No"patern="\+91[6789][0-9]{9}" required>
+            E-mail id*:<input type="email" name="mail" required><br><br>
+            Photo*:<input type="file" required>
+</fieldset>
+<fieldset><legend>Residential Address Details</legend>
+    Applicant's Address*<textarea maxlength="20" required name="Address"></textarea>
+    District* <select required name="District">
+        <option value="prakasam">prakasam</option>
+        <option value="Guntur">prakasam</option>
+        <option value="krishna">prakasam</option>
+    </select><br>
+    (maximum characters:20)<br><br>
+    Mandal* <select required name="Mandal">
+        <option value="prakasam">prakasam</option>
+        <option value="Guntur">prakasam</option>
+        <option value="krishna">prakasam</option>
+    </select>
+    Village* <select required name="village">
+        <option value="prakasam">prakasam</option>
+        <option value="Guntur">prakasam</option>
+        <option value="krishna">prakasam</option>
+    </select><br><br>
+    PinCode:<input type="text" name="Pincode" required pattern="[0-9]{6}">
+    </fieldset>
+    <fieldset>
+        <legend>Pass type Detailsl</legend>
+        City* <select required name="City">
+            <option value="prakasam">prakasam</option>
+            <option value="Guntur">prakasam</option>
+            <option value="krishna">prakasam</option>
+        </select><br><br>
+        Pass Type* <select required name="pass tye">
+            <option value="Greater Pass">Greater Pass</option>
+            <option value="Ordinary Pass">Ordinary Pass</option>
+            <option value="Metro EXpress Pass">Metro EXpress Pass</option>
+        </select><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Mode of Payment & Pass Collection </legend>
+        Payment Mode* <select required name="Payment Mode" >
+            <option value="Select Payment Mode">Select Payment Mode</option>
+            <option value="Payment at counter">Payment at counter</option>
+        </select><br><br>
+
+        Pass Delivery Mode* <select required name="Pass Delivery Mode" >
+            <option value="Pass Delivery Mode">Pass Delivery Mode</option>
+            <option value="At counter">At counter</option>
+        </select><br><br>
+
+      Center at which you want to collect pass* <select required name="Center at which you want to collect pass" >
+            <option value="select">Select</option>
+            <option value="RTC ABIDS">RTC ABIDS</option>
+            <option value="RTC AIRPORT">RTC AIRPORT</option>
+            <option value="RTC ECIL">RTC ECIL</option>
+        </select>  
+    </fieldset>
+    <center><img src="caption.png" width="150"><br>
+        <input type="text" name="OTP" required pattern=".{1,6}"><br>
+    <input type="submit"></center>
+    </form>
+</body>
+</html>
